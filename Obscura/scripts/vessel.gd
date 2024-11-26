@@ -35,7 +35,7 @@ func _physics_process(_delta):
 		).limit_length(1.0)
 	
 	var direction = (Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	#var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
 	
 	if direction:
 		velocity.x = direction.x * speed
